@@ -440,7 +440,49 @@
     .author b {
       font-weight: 700;
     }
+    .read-more-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff; /* white text */
+  background: #000; /* black background */
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #ffd700, #ffcc00, #fff200, #ffd700) 1;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
 
+/* Shine hover effect */
+.read-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 215, 0, 0.6), transparent);
+  transform: skewX(-25deg);
+}
+
+.read-more-btn:hover::before {
+  animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+.read-more-btn:hover {
+  background: #111; /* darker black */
+  color: #ffd700;   /* gold text on hover */
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
 
     </style>
 </head>
@@ -784,7 +826,6 @@
 
     <!-- Floating emojis -->
     <div class="emoji" style="top:20px; left:-40px;">💍</div>
-    <div class="emoji" style="bottom:20px; right:-40px;">😂</div>
     <div class="emoji" style="top:50%; right:-30px;">👑</div>
     <div class="emoji" style="bottom:50%; left:-30px;">💎</div>
   </div>
@@ -796,6 +837,10 @@
     <p>Your response has been submitted successfully 💰💎✨</p>
     <button class="btn btn-warning" id="okBtn">OK ✨</button>
   </div>
+
+  <div class="text-center mt-4">
+  <a href="index.html" class="read-more-btn">Back to Home</a>
+</div>
 
   <!-- Footer -->
   <footer class="footer p-4">
