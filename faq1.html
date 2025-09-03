@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+    /* Custom CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f4f3;
+  line-height: 1.6;
+}
+
+/* Top Header */
+.top-header {
+  background-color: #000;
+  color: #f0f1e9;
+  padding: 8px 0;
+}
+
+.top-header .address {
+  font-size: 14px;
+}
+
+.social-icons a {
+  color: white;
+  background-color: #000;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.3s;
+  margin: 0 2px;
+}
+
+.social-icons a:hover {
+  background-color: #444;
+}
+
+/* Navigation */
+.navbar {
+  background-color: white !important;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+ .navbar-nav .nav-link {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 100px;
+}
+
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-nav .nav-link {
+  color: #000 !important;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #d4af37 !important;
+}
+
+     /* FAQ Section */
+    body {
+      background-color: #fefefe;
+      font-family: 'Segoe UI', sans-serif;
+      padding-bottom: 4rem;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #f7c600;
+      display: inline-block;
+    }
+
+    .accordion-button {
+      font-weight: bold;
+      background-color: #fff9dc;
+      transition: all 0.3s ease;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #fff2b8;
+      color: #333;
+      box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+    }
+
+    .accordion-button:hover {
+      background-color: #fff2b8;
+      transform: scale(1.01);
+    }
+
+    .accordion-body {
+      background-color: #ffffff;
+      color: #333;
+      padding: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: linear-gradient(to right, #ffcc00, #fff);
+      margin: 3rem 0;
+    }
+
+    .info-section h4 {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-section {
+      background-color: #f9f9f9;
+      padding: 2rem 1rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .info-section:hover {
+      transform: translateY(-4px);
+    }
+
+    .info-section {
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.info-section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fffef7;
+}
+
+.info-section h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.info-section p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.accordion-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid transparent;
+  transition: 
+    box-shadow 0.3s ease, 
+    transform 0.3s ease,
+    border-color 0.3s ease;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  color: #222;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.accordion-button:hover {
+  color: #f9a825; /* golden accent */
+}
+
+.accordion-item.show, /* active/open accordion */
+.accordion-item:focus-within {
+  box-shadow: 0 8px 20px rgba(249, 168, 37, 0.3);
+  border-color: #f9a825;
+  transform: translateY(-5px);
+}
+
+.accordion-body {
+  padding: 1rem 1.5rem;
+  color: #444;
+  font-weight: 400;
+  line-height: 1.6;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Footer */
+    .footer {
+      background-color: #1c2331;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      width: 100%;
+    }
+
+    .footer .social-section {
+      background-color: #6351ce;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer .social-section span {
+      margin-right: 15px;
+      font-weight: 500;
+    }
+
+    .footer .social-section a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    .footer .social-section a:hover {
+      color: #ffd700;
+    }
+
+    .footer-column h6 {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      position: relative;
+    }
+
+    .footer-column h6::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: #6351ce;
+      margin-top: 6px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+      color: #ccc;
+      font-size: 14px;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .footer-column a:hover {
+      color: #ffd700;
+    }
+
+    .footer-column i {
+      margin-right: 10px;
+      color: #ffd700;
+    }
+
+    .back-home-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 2px solid #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #f9a825;
+  color: #000;
+  border-color: #f9a825;
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-8 col-12 text-center text-md-start">
+          <div class="address" style="font-size: 20px;">
+            #280/1, Anniamma Arcade, 2nd Floor, Sampige Road, Malleshwaram, Bangalore - 560003
+          </div>
+        </div>
+        <div class="col-md-4 col-12 text-center text-md-end mt-2 mt-md-0">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/sristargold/" style="font-size: 20px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://in.linkedin.com/company/sristargold" style="font-size: 20px;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/sristargold" style="font-size: 20px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/embed/pDc-zHBSuNA" style="font-size: 20px;"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container py-5">
+    <!-- General Questions -->
+    <h2 class="section-title" style="font-size: 45px;">We Buy Gold</h2>
+    <div class="accordion mb-5" id="generalAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#generalOne" style="font-size: 25px;">
+            Q.1 Why Sell my metals to Sristar Gold Company?
+          </button>
+        </h2>
+        <div id="generalOne" class="accordion-collapse collapse show" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+           We offer the highest prices for your metals. Our operations are conducted in a professional, transparent and ethical manner. We pay instantly.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalTwo" style="font-size: 25px;">
+           Q.2 How long does the whole process take?
+          </button>
+        </h2>
+        <div id="generalTwo" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            We take around 15 minutes to verify your metals and documents. After verification, we buy your metals and pay you immediately.
+          </div>
+        </div>
+      </div>
+       <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalThree" style="font-size: 25px;">
+           Q.3 How do you check the metals?
+          </button>
+        </h2>
+        <div id="generalThree" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            We check the hallmark on the metals and ownership proofs. We check the purity of gold through XRF technology called Karat Meter.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalFour" style="font-size: 25px;">
+           Q.4 What is the charge for testing and purity evaluation?
+          </button>
+        </h2>
+        <div id="generalFour" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            We offer free testing and purity evaluation
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalFive" style="font-size: 25px;">
+           Q.5 Will my metals get damaged during testing?
+          </button>
+        </h2>
+        <div id="generalFive" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            No, your metals won't be damaged while the computerised testing.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalSix" style="font-size: 25px;">
+           Q.6 What kind of metals do you buy?
+          </button>
+        </h2>
+        <div id="generalSix" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            We buy all types of precious metal such as Platinum, gold, diamond & silver.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalSeven" style="font-size: 25px;">
+           Q.7 How do you decide the price of my metals?
+          </button>
+        </h2>
+        <div id="generalSeven" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            We use a simple formula. Total Grams (Net Weight) x Purity Percentage x Today's rate = Price of your metal. We don’t take the weight of fake stones/enamels/dust/wax into consideration.
+          ** We compensate for the values of real stones (Ruby/Emerald/Diamonds etc).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalEight" style="font-size: 25px;">
+           Q.8 Do you pay for valuable stones in the metals?
+          </button>
+        </h2>
+        <div id="generalEight" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. We pay compensation for the values of precious stones.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalNine" style="font-size: 25px;">
+           Q.9 How will you pay me for my metals?
+          </button>
+        </h2>
+        <div id="generalNine" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            We make all payments following a strict guideline via Cash/NEFT/IMPS/RTGs
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generalTen" style="font-size: 25px;">
+           Q.10 Can I buy back my metals after selling?
+          </button>
+        </h2>
+        <div id="generalTen" class="accordion-collapse collapse" data-bs-parent="#generalAccordion" style="font-size: 20px;">
+          <div class="accordion-body" style="font-size: 20px;">
+            Once you sell us your metals you cannot get it pack.
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <!-- Process & Security -->
+    <h2 class="section-title" style="font-size: 45px;">🛡 We Give Gold on Rent</h2>
+    <div class="accordion mb-5" id="processAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#processOne" style="font-size: 25px;">
+            Q.1: How many days before my event should I book the jewellery?
+          </button>
+        </h2>
+        <div id="processOne" class="accordion-collapse collapse show" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You have to book the jewellery 3 days before you want to wear it.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processTwo" style="font-size: 25px;">
+            Q.2: How long does it take to receive the jewellery after booking?
+          </button>
+        </h2>
+        <div id="processTwo" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            After your booking is confirmed, it will take another 24 to 48 hours to deliver the jewellery.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processThree" style="font-size: 25px;">
+            Q.3: What are the minimum and maximum timespan of rental?
+          </button>
+        </h2>
+        <div id="processThree" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You can rent jewellery from us for 1 to 3 days (depending on the cases).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processFour" style="font-size: 25px;">
+            Q.4: What is your rate of jewellery rental?
+          </button>
+        </h2>
+        <div id="processFour" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You will have to pay 2% of the gold value on each day of rental.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processFive" style="font-size: 25px;">
+            Q.5: Do I have to pay a security deposit to rent jewellery?
+          </button>
+        </h2>
+        <div id="processFive" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            There is no provision of any security deposit yet. But, we will carry out a verification profiling on you. On clearing the verification profiling you will become eligible to rent gold from us.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processSix" style="font-size: 25px;">
+            Q.6: When and How shall I pay for the jewellery rental?
+          </button>
+        </h2>
+        <div id="processSix" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You can pay us as per your convenience. We accept cash/RTGS/IMPS/Net Banking payments.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processSeven" style="font-size: 25px;">
+            Q.7: How Will I receive and return the rented jewellery?
+          </button>
+        </h2>
+        <div id="processSeven" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            We deliver the gold jewellery to your doorstep. But, you shall have to come to our office at the time of return.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processEight" style="font-size: 25px;">
+            Q.8: Do I need an ID Proof during collecting my jewellery?
+          </button>
+        </h2>
+        <div id="processEight" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes, ID proof and an Address Proof are required while collecting the jewellery for verification purposes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processNine" style="font-size: 25px;">
+            Q.9: Are the jewellery adjustable?
+          </button>
+        </h2>
+        <div id="processNine" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Depends on the piece of jewellery. Some pieces can be adjusted as per your wish.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processTen" style="font-size: 25px;">
+            Q.10: How will I know if the jewellery will fit me?
+          </button>
+        </h2>
+        <div id="processTen" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You shall have to come to our office to be sure about the jewellery fittings.
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processEleven" style="font-size: 25px;">
+            Q.11: Can I buy the jewellery I have rented?
+          </button>
+        </h2>
+        <div id="processEleven" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes, of course! You will have to visit our office for the payment procedure.
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#processTwelve" style="font-size: 25px;">
+            Q.12: What will happen if the rented jewellery gets damaged or stolen?
+          </button>
+        </h2>
+        <div id="processTwelve" class="accordion-collapse collapse" data-bs-parent="#processAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            If the jewellery you rented becomes damaged, or gets stolen, we will consider it sold, and you shall have to pay the actual amount.
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <hr>
+
+    <!-- Pricing & Payment -->
+     <!-- Pricing & Payment -->
+  <div class="container my-5">
+    <h2 class="mb-4">₹ Pricing & Payment</h2>
+    <div class="accordion" id="pricingAccordion">
+
+      <!-- Q1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#priceOne" style="font-size: 25px;">
+            Q1: How do you determine the gold price?
+          </button>
+        </h2>
+        <div id="priceOne" class="accordion-collapse collapse show" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Our gold prices are based on international market rates, purity, and weight.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceTwo" style="font-size: 25px;">
+            Q.2: What is the process of releasing the pledged gold?
+          </button>
+        </h2>
+        <div id="priceTwo" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion" style="font-size: 20px;">
+          <h3>Visit the nearest Sristar Gold Company to you with:</h3>
+  <ul>
+    <li>Original receipt of your pledged gold</li>
+    <li>An ID Proof (PAN Card/Passport/Ration Card/Driving Licence)</li>
+    <li>An Address Proof (Aadhar Card/Driving Licence/Voter ID/Gas Bill/Electricity Bill/Bank Passbook/BSNL Telephone Bill)</li>
+    <li>Original Purchase Bill</li>
+    <li>One copy of your photo (Passport sized).</li>
+  </ul>
+  <p>We will take care of everything else.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceThree" style="font-size: 25px;">
+            Q.3: Do you release gold from more than one location?
+          </button>
+        </h2>
+        <div id="priceThree" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. We release gold from more than one location. Please visit or contact us for further information.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFour" style="font-size: 25px;">
+            Q.4: Do you have a minimum or maximum quantity for releasing gold
+          </button>
+        </h2>
+        <div id="priceFour" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            No. We release all quantities of gold.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFive" style="font-size: 25px;">
+            Q.5: How long does the entire process take?
+          </button>
+        </h2>
+        <div id="priceFive" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            After releasing the gold, we bring it back to our office for purity evaluation. The final settlement is made once the testing is done.
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceSix" style="font-size: 25px;">
+            Q.6: Can I keep some of my gold after the release?
+          </button>
+        </h2>
+        <div id="priceSix" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. You can keep some of your released gold. However, you will need to inform us in advance.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceSeven" style="font-size: 25px;">
+            Q.7: What if I am not happy with the price offered for my pledged gold?
+          </button>
+        </h2>
+        <div id="priceSeven" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Based on the details you provide us, we give you an estimation prior to releasing your gold. However, if you’re still not satisfied with the price we offer, you must refund us the entire amount we paid to release your gold + Up to 2% to 4% service charges.
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceEight" style="font-size: 25px;">
+            Q.8: Do you charge for the service of releasing pledged gold?
+          </button>
+        </h2>
+        <div id="priceEight" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            No. The service is free of cost. However, if you decide not to sell your gold to us after the release, you will need to pay us.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceNine" style="font-size: 25px;">
+            Q.9: Do I have to be present when my gold is released from Banks, NBFCs, Pawn Shops, or Financiers?
+          </button>
+        </h2>
+        <div id="priceNine" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. You have to be present during the release of your pledged gold, accompanied by one of our executives.
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <hr>
+
+    <!-- Pricing & Payment -->
+     <!-- Pricing & Payment -->
+  <div class="container my-5">
+    <h2 class="mb-4">₹ Pricing & Payment</h2>
+    <div class="accordion" id="pricingAccordion">
+
+      <!-- Q1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#priceOne" style="font-size: 25px;">
+            Q1: How do you determine the gold price?
+          </button>
+        </h2>
+        <div id="priceOne" class="accordion-collapse collapse show" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Our gold prices are based on international market rates, purity, and weight.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceTwo" style="font-size: 25px;">
+            Q.2: Do you take making charges for gold jewellery?
+          </button>
+        </h2>
+        <div id="priceTwo" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion" style="font-size: 20px;">
+          <h3>Visit the nearest Sristar Gold Company to you with:</h3>
+          <ul>
+            <li>Original receipt of your pledged gold</li>
+            <li>An ID Proof (PAN Card/Passport/Ration Card/Driving Licence)</li>
+            <li>An Address Proof (Aadhar Card/Driving Licence/Voter ID/Gas Bill/Electricity Bill/Bank Passbook/BSNL Telephone Bill)</li>
+            <li>Original Purchase Bill</li>
+            <li>One copy of your photo (Passport sized).</li>
+          </ul>
+          <p>We will take care of everything else.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceThree" style="font-size: 25px;">
+            Q3. Are all the jewellery you sell hallmarked?
+          </button>
+        </h2>
+        <div id="priceThree" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. All the jewellery we are tested for purity and hallmarked.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFour" style="font-size: 25px;">
+            Q.4: Do you charge GST on purchasing gold jewellery?
+          </button>
+        </h2>
+        <div id="priceFour" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. GST is applicable to purchase of both ready-made and custom-made gold jewellery.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFive" style="font-size: 25px;">
+            Q.5: Are the jewellery adjustable?
+          </button>
+        </h2>
+        <div id="priceFive" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+           Depends on the piece of jewellery. Some pieces can be adjusted as per your wish.
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceSix" style="font-size: 25px;">
+            Q.6: How will I know if the jewellery will fit me?
+          </button>
+        </h2>
+        <div id="priceSix" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You shall have to come to our office to be sure about the jewellery fittings.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceSeven" style="font-size: 25px;">
+            Q.7: Do you give purchase receipts?
+          </button>
+        </h2>
+        <div id="priceSeven" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. Purchase receipts are provided for both ready-made and custom-made gold jewellery.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceEight" style="font-size: 25px;">
+            Q.8: Will there be any hidden costs?
+          </button>
+        </h2>
+        <div id="priceEight" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            No, there won’t be any hidden costs. All details shall be mentioned on the purchase receipt.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceNine" style="font-size: 25px;">
+            Q.9: Do you offer Engraving Services?
+          </button>
+        </h2>
+        <div id="priceNine" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes, we do offer engraving services on request.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceTen" style="font-size: 25px;">
+            Q.10: How Shall I collect the jewellery?
+          </button>
+        </h2>
+        <div id="priceTen" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            You can collect your jewellery either from our office or we can deliver it to your doorstep.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceEleven" style="font-size: 25px;">
+            Q.11 What is your mode of delivery?
+          </button>
+        </h2>
+        <div id="priceEleven" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            We have a team of trusted executives to safely deliver your gold jewellery to your doorstep.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceTwelve" style="font-size: 25px;">
+            Q.12 Can I change the address of delivery after placing the order?
+          </button>
+        </h2>
+        <div id="priceTwelve" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes. You can change the address of delivery after you place your order.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceThirteen" style="font-size: 25px;">
+            Q.13: How long will it take to deliver the jewellery?
+          </button>
+        </h2>
+        <div id="priceThirteen" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            We usually deliver ready-made gold jewellery safely to your doorstep within 24 to 48 hours after the order is placed. For custom-made jewellery, it takes us the same time to deliver but only after the jewellery is ready.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFourteen" style="font-size: 25px;">
+            Q.14: Do I need an ID Proof during collecting my jewellery?
+          </button>
+        </h2>
+        <div id="priceFourteen" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes, ID proof and an Address Proof are required while collecting the jewellery for verification purposes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#priceFifteen" style="font-size: 25px;">
+            Q.15: Can my family members receive my order if I am not home?
+          </button>
+        </h2>
+        <div id="priceFifteen" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
+          <div class="accordion-body" style="font-size: 20px;">
+            Yes, your family members can collect the jewellery instead of you after clearing the payment. They will also require to provide us with an ID Proof and an Address Proof for verification purposes.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Back to Home Button -->
+    <div class="text-center mt-4">
+      <a href="index.html" class="btn btn-dark px-4 py-2 back-home-btn">
+        ⬅ Back to Home
+      </a>
+    </div>
+  </div>
+
+    <!-- Footer -->
+  <footer class="footer p-4">
+    <div class="social-section">
+      <div class="d-flex gap-3 flex-wrap" style="min-width: 140px;"></div>
+      <span style="font-size: 25px;">Get connected with us on social networks:</span>
+      <a href="https://www.facebook.com/sristargold/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://in.linkedin.com/company/sristargold" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/sristargold" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/embed/pDc-zHBSuNA" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-column">
+            <h6 style="font-size: 20px;">Company Name</h6>
+            <p style="font-size: 20px;">SRISTAR GOLD COMPANY</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-column">
+            <h6 style="font-size: 25px;">Services</h6>
+            <p><a href="#" style="font-size: 20px;">Gold Exchange</a></p>
+            <p><a href="#" style="font-size: 20px;">Sell Gold</a></p>
+            <p><a href="#" style="font-size: 20px;">Rent Gold</a></p>
+            <p><a href="#" style="font-size: 20px;">Pledged Gold</a></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-column">
+            <h6 style="font-size: 20px;">Links</h6>
+            <p><a href="index.html" style="font-size: 20px;">Home</a></p>
+            <p><a href="about.html" style="font-size: 20px;">About</a></p>
+            <p><a href="services.html" style="font-size: 20px;">Services</a></p>
+            <p><a href="branches.html" style="font-size: 20px;">Branches</a></p>
+            <p><a href="contact.html" style="font-size: 20px;">Contact</a></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-column">
+            <h6 style="font-size: 20px;">Contact</h6>
+            <p><i class="fas fa-home" style="font-size: 20px;"></i>280/1, Anniamma Arcade, 2nd Floor,<br> Sampige Road, 18th Cross Rd, signal,<br> Malleshwaram, Bengaluru.</p>
+            <p><i class="fas fa-envelope" style="font-size: 20px;"></i> sristargoldcompany@gmail.com</p>
+            <p><i class="fas fa-phone" style="font-size: 20px;"></i>+91 63 66 333 444</p>
+            <p><i class="fas fa-print" style="font-size: 20px;"></i>+91 63 66 333 444</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
