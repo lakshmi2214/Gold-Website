@@ -105,6 +105,8 @@
             margin-bottom: 8px;
         }
 
+           /* Commane Section */
+
         .comments-section {
             margin-top: 40px;
             padding-top: 30px;
@@ -488,6 +490,8 @@
    Inductively Coupled Plasma (ICP) is a cutting-edge method that vaporizes a sample with a high-temperature plasma torch. By measuring the light emitted at different wavelengths, it can precisely determine gold content, although it requires the destruction of the sample.
    What you're left with is the amount of real gold. 
   </div>
+  </div>
+  </div>
 
 
 
@@ -526,8 +530,10 @@
   <h4>🎉 Thank You! 🎉</h4>
   <p>We received your ✨sparkling✨ message! <br>Someone from our gold mine will reply soon! ⛏️😄</p>
 </div>
+</div>
+</div>
 
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="footer" style="background-color: #1c2331; color: #fff; font-family: 'Segoe UI', sans-serif; padding-top: 40px; width: 100%; margin-top: 40px;">
         <!-- Social Media Section -->
         <div class="social-section" style="background-color: #6351ce; text-align: center; padding: 20px;">
@@ -583,5 +589,21 @@
 
     <!-- Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+     <script>
+  const form = document.getElementById('funnyForm');
+  const thankYouBox = document.getElementById('thankYouBox');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    thankYouBox.style.display = 'block';
+
+    setTimeout(() => {
+      thankYouBox.style.display = 'none';
+      form.reset();
+    }, 4000);
+  });
+</script>
 </body>
 </html>

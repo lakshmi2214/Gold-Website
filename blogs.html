@@ -50,48 +50,61 @@
             background-color: #444;
         }
 
-        /* Navigation Bar */
-        .navbar {
-            background-color: white !important;
-            padding: 12px 20px;
-            border-bottom: 1px solid #ddd;
-        }
+        
+/* Navigation */
+.navbar {
+  background-color: white !important;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
 
-        .navbar-brand {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 22px;
-            font-weight: bold;
-            color: #000 !important;
-            text-decoration: none;
-        }
+ .navbar-nav .nav-link {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
 
-        .navbar-brand img {
-            height: 50px;
-            width: auto;
-        }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 100px;
+}
 
-        .navbar-nav .nav-link {
-            color: #000 !important;
-            font-weight: 600;
-            padding: 8px 12px !important;
-            transition: color 0.3s;
-        }
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+}
 
-        .navbar-nav .nav-link:hover,
-        .navbar-nav .nav-link.active {
-            color: #d4af37 !important;
-        }
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
 
-        .navbar-toggler {
-            border: none;
-            padding: 4px 8px;
-        }
+.navbar-nav .nav-link {
+  color: #000 !important;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  transition: color 0.3s;
+}
 
-        .navbar-toggler:focus {
-            box-shadow: none;
-        }
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #d4af37 !important;
+}
+
+.navbar .btn-warning {
+  font-weight: 600;
+  border-radius: 6px;
+  color: #000;
+}
+
+.navbar .btn-warning:hover {
+  background-color: #004d40;
+  color: #fff;
+}
 
          /* Page Header */
 .page-header {
@@ -512,55 +525,55 @@ body {
         </div>
     </div>
 
-    <!-- Main Navigation -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.jpg" alt="Sristar Gold Logo" />
-                <span>SRISTAR GOLD</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="branches.html">Branches</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gold-calculator.html">Gold Calculator</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="album.html">Album</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="blogs.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.jpg" alt="Sristar Gold Logo">
+        <span class="company-name">SRISTAR GOLD</span>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="branches.html">Branches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gold calculator.html">Gold Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="album.html">Album</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <!-- Page Header -->
   <section class="page-header">
     <div class="container">
-      <h1>Services</h1>
+      <h1>BLOGS</h1>
       <div class="breadcrumb-custom">
-        <a href="index.html">Home</a> / <span>Services</span>
+        <a href="index.html"></a>
       </div>
     </div>
   </section>
@@ -591,7 +604,7 @@ body {
                                         </div>
                                         <div class="author-info d-flex align-items-center gap-2">
                                             <img src="assets/images/manu.png" alt="Author Avatar" class="author-avatar rounded-circle border border-white border-2">
-                                            <span class="author-name">Manu Arora</span>
+                                            <span class="author-name">Srikanth V</span>
                                         </div>
                                     </div>
                                     <a href="blog1.html" class="read-more-link">
@@ -610,7 +623,7 @@ body {
                                 <img src="assets/images/top.jpg" alt="Bangalore Palace">
                             </div>
                             <div class="card-body p-4">
-                                <h5 class="fw-bold text-dark-emphasis">10 Golden Rules to Sell Gold in Bangalore for Top Cash</h5>
+                                <h5 class="fw-bold text-dark-emphasis">From mines to memories - the journey of pure gold.</h5>
                                 <p class="blog-description text-secondary">Discover the essential guidelines and expert tips for selling your gold in Bangalore to maximize your returns and ensure a secure transaction.</p>
                                 <div class="card-footer-content mt-auto d-flex justify-content-between align-items-center flex-wrap">
                                     <div class="d-flex align-items-center flex-wrap gap-3">
@@ -619,10 +632,10 @@ body {
                                         </div>
                                         <div class="author-info d-flex align-items-center gap-2">
                                             <img src="assets/images/manu.png" alt="Author Avatar" class="author-avatar rounded-circle border border-white border-2">
-                                            <span class="author-name">Manu Arora</span>
+                                            <span class="author-name">Srikanth V</span>
                                         </div>
                                     </div>
-                                    <a href="blog2.html" class="read-more-link">
+                                    <a href="blog22.html" class="read-more-link">
                                         Read More <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -647,10 +660,10 @@ body {
                                         </div>
                                         <div class="author-info d-flex align-items-center gap-2">
                                             <img src="assets/images/manu.png" alt="Author Avatar" class="author-avatar rounded-circle border border-white border-2">
-                                            <span class="author-name">Manu Arora</span>
+                                            <span class="author-name">Srikanth V</span>
                                         </div>
                                     </div>
-                                    <a href="blog3.html" class="read-more-link">
+                                    <a href="blog33.html" class="read-more-link">
                                         Read More <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -675,10 +688,10 @@ body {
                                         </div>
                                         <div class="author-info d-flex align-items-center gap-2">
                                             <img src="assets/images/manu.png" alt="Author Avatar" class="author-avatar rounded-circle border border-white border-2">
-                                            <span class="author-name">Manu Arora</span>
+                                            <span class="author-name">Mr Manjappa Bidaragaddi</span>
                                         </div>
                                     </div>
-                                    <a href="blog2.html" class="read-more-link">
+                                    <a href="blog4.html" class="read-more-link">
                                         Read More <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -703,10 +716,10 @@ body {
                                         </div>
                                         <div class="author-info d-flex align-items-center gap-2">
                                             <img src="assets/images/manu.png" alt="Author Avatar" class="author-avatar rounded-circle border border-white border-2">
-                                            <span class="author-name">Manu Arora</span>
+                                            <span class="author-name">Mr Manjappa Bidaragaddi</span>
                                         </div>
                                     </div>
-                                    <a href="blog2.html" class="read-more-link">
+                                    <a href="blog5.html" class="read-more-link">
                                         Read More <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -731,10 +744,10 @@ body {
                                         </div>
                                         <div class="author-info d-flex align-items-center gap-2">
                                             <img src="assets/images/manu.png" alt="Author Avatar" class="author-avatar rounded-circle border border-white border-2">
-                                            <span class="author-name">Manu Arora</span>
+                                            <span class="author-name">Mr Manjappa Bidaragaddi</span>
                                         </div>
                                     </div>
-                                    <a href="blog3.html" class="read-more-link">
+                                    <a href="blog6.html" class="read-more-link">
                                         Read More <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
@@ -743,8 +756,6 @@ body {
                     </div>
                 </div>
             </div>
-            
-            
         </div>
     </section>
 
